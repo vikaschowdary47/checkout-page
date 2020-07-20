@@ -8,50 +8,90 @@
   </head>
   <body>
     <div class="container">
-      <div class="form">
-        <h1>Checkout</h1>
-        <form>
-          <h3>Contact information</h3>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="user_email" />
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="user_phone" />
+      <div class="display">
+        <div class="form">
+          <h1>Checkout</h1>
+          <form>
+            <h3>Contact information</h3>
+            <label for="email">E-mail</label><br />
+            <input type="email" id="email" name="user_email" /><br />
+            <label for="phone">Phone</label><br />
+            <input type="tel" id="phone" name="user_phone" />
 
-          <h3>Shipping address</h3>
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="user_name" />
-          <label for="address">Address</label>
-          <input type="text" id="address" name="user_address" />
-          <label for="city">City</label>
-          <input type="text" id="city" name="user_city" />
+            <h3>Shipping address</h3>
+            <label for="name">Full name</label><br />
+            <input type="text" id="name" name="user_name" /><br />
+            <label for="address">Address</label><br />
+            <input type="text" id="address" name="user_address" /><br />
+            <label for="city">City</label><br />
+            <input type="text" id="city" name="user_city" /><br />
 
-          <label for="country">State</label>
-          <select id="country" name="user_country">
-            <option value="AS">Australia</option>
-            <option value="C">China</option>
-            <option value="I">India</option>
-          </select>
-          <label for="code">Postal code</label>
+            <label for="country">State</label><br />
+            <select id="country" name="user_country">
+              <option value="AS">Australia</option>
+              <option value="C">China</option>
+              <option value="I">India</option>
+            </select>
+            <label for="code">Postal code</label>
+            <input type="text" id="zipcode" name="user_zipcode" /><br />
 
-          <input type="checkbox" id="save" />
-          <label for="save">Save this information for next time</label>
-        </form>
-        <button class="button" type="submit">Continue</button>
-      </div>
-
-      <div class="card">
-        <div class="bag item">
-          <img src="./images/photo1.png" alt="bag" />
-          <div class="amount">
-            <small>Vintage Backbag</small>
-            <span class="cost">$54.99</span>
-          </div>
+            <input type="checkbox" id="save" />
+            <label for="save">Save this information for next time</label>
+          </form>
+          <button class="button" type="submit">Continue</button>
         </div>
-        <div class="bag item">
-          <img src="./images/photo1.png" alt="bag" />
-          <div class="amount">
-            <small>Vintage Backbag</small>
-            <span class="cost">$54.99</span>
+
+        <div class="card">
+          <div class="card-inside">
+            <div class="bag item">
+              <img src="./images/photo1.png" alt="bag" />
+              <div class="amount">
+                <small>Vintage Backbag</small>
+                <span class="cost">$54.99</span>
+                <div class="plus-minus">
+                  <div class="plus">
+                    <span>+</span>
+                  </div>
+                  <div class="quantity count">
+                    1
+                  </div>
+                  <div class="minus">
+                    <span>-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shoe item">
+              <img src="./images/photo2.png" alt="bag" />
+              <div class="amount">
+                <small>Levi shoes</small>
+                <span class="cost">$74.99</span>
+                <div class="plus-minus">
+                  <div class="plus">
+                    <span>+</span>
+                  </div>
+                  <div class="quantity count">
+                    1
+                  </div>
+                  <div class="minus">
+                    <span>-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="final">
+              <hr />
+              <div class="shipping">
+                shipping:
+                <div class="order">$19</div>
+              </div>
+              <hr />
+              <div class="total">
+                Total:
+                <div class="order">$19</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
