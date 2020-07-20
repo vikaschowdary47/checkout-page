@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="./style.css" rel="stylesheet" />
     <title>checkout</title>
   </head>
@@ -14,26 +18,56 @@
           <form>
             <h3>Contact information</h3>
             <label for="email">E-mail</label><br />
-            <input type="email" id="email" name="user_email" /><br />
+            <input
+              type="email"
+              id="email"
+              name="user_email"
+              placeholder="Enter your email"
+            /><br />
             <label for="phone">Phone</label><br />
-            <input type="tel" id="phone" name="user_phone" />
+            <input
+              type="tel"
+              id="phone"
+              name="user_phone"
+              placeholder="Enter your phone"
+            />
 
             <h3>Shipping address</h3>
             <label for="name">Full name</label><br />
-            <input type="text" id="name" name="user_name" /><br />
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Name"
+            /><br />
             <label for="address">Address</label><br />
-            <input type="text" id="address" name="user_address" /><br />
+            <input
+              type="text"
+              id="address"
+              name="user_address"
+              placeholder="Your address"
+            /><br />
             <label for="city">City</label><br />
-            <input type="text" id="city" name="user_city" /><br />
+            <input
+              type="text"
+              id="city"
+              name="user_city"
+              placeholder="Your city"
+            /><br />
 
             <label for="country">State</label><br />
-            <select id="country" name="user_country">
+            <select id="country" name="user_country" placeholder="Your country">
               <option value="AS">Australia</option>
               <option value="C">China</option>
               <option value="I">India</option>
             </select>
             <label for="code">Postal code</label>
-            <input type="text" id="zipcode" name="user_zipcode" /><br />
+            <input
+              type="text"
+              id="zipcode"
+              name="user_zipcode"
+              placeholder="Your pin code"
+            /><br />
 
             <input type="checkbox" id="save" />
             <label for="save">Save this information for next time</label>
@@ -47,7 +81,7 @@
               <img src="./images/photo1.png" alt="bag" />
               <div class="amount">
                 <small>Vintage Backbag</small>
-                <span class="cost">$54.99</span>
+                <div class="bag-cost">54.99</div>
                 <div class="plus-minus">
                   <div class="plus">
                     <span>+</span>
@@ -65,7 +99,7 @@
               <img src="./images/photo2.png" alt="bag" />
               <div class="amount">
                 <small>Levi shoes</small>
-                <span class="cost">$74.99</span>
+                <div class="shoe-cost">74.99</div>
                 <div class="plus-minus">
                   <div class="plus">
                     <span>+</span>
@@ -84,17 +118,18 @@
               <hr />
               <div class="shipping">
                 shipping:
-                <div class="order">$19</div>
+                <div class="shipping-cost order">$19</div>
               </div>
               <hr />
               <div class="total">
                 Total:
-                <div class="order">$19</div>
+                <div class="total-cost order">$148.98</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./code.js"></script>
   </body>
 </html>
